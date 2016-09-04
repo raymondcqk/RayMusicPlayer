@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RayMusicPlayer</string>
+
+    <string name="menu_setting">设置</string>
+    <string name="menu_search">查找</string>
+    <string name="menu_share">分享</string>
+    <string name="musicplayer">音乐播放器</string>
+    <string name="menu_list">歌曲列表</string>
+</resources>

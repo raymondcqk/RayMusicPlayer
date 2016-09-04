@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+    <TextView
+        android:id="@+id/id_file_internal_dir_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内置File目录："/>
+
+    <TextView
+        android:id="@+id/id_file_internal_dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_file_internal_cache_dir"
+        android:text=" 空 "/>
+
+    <TextView
+        android:id="@+id/id_file_internal_cache_dir_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_file_internal_dir"
+        android:layout_marginTop="20dp"
+        android:text="内置Cache目录："/>
+
+    <TextView
+        android:id="@+id/id_file_internal_cache_dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/id_file_internal_cache_dir_title"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/id_file_internal_cache_dir_title"
+        android:text=" 空 "/>
+
+    <EditText
+        android:id="@+id/edt_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_file_internal_cache_dir"
+        android:layout_marginTop="20dp"
+        android:hint="请输入文字"/>
+
+    <TextView
+        android:id="@+id/tv_file_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_file"
+        android:layout_marginTop="20dp"
+        android:text="这是文件中的内容：\n\n\t\t"/>
+
+    <View
+        android:id="@+id/divider_file"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_file_result"
+        android:background="@color/colorAccent"></View>
+
+    <TextView
+        android:id="@+id/tv_file_external_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_file"
+        android:layout_marginTop="10dp"
+        android:text="ExternalDir："/>
+    <TextView
+        android:id="@+id/id_file_external"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_file_external_title"
+        android:layout_alignLeft="@+id/id_file_internal_cache_dir"
+        android:text=" 空 "/>
+    <TextView
+        android:id="@+id/tv_file_external_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_file_external_title"
+        android:layout_marginTop="10dp"
+        android:text="ExternalContent"/>
+
+
+</RelativeLayout>

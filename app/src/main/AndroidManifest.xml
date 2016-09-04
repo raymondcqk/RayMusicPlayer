@@ -1,0 +1,73 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.raymondqk.raymusicplayer"
+          android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+
+    <application
+        android:name=".application.ApplicationTest"
+        android:allowBackup="true"
+        android:icon="@mipmap/musicplayer_512px"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MusicListActivity"
+            android:label="@string/musicplayer">
+        </activity>
+        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TestFileActivity"></activity>
+        <activity android:name=".activity.GuideActivity"></activity>
+
+        <activity android:name=".activity.MessengerActivity"></activity>
+        <activity android:name=".activity.AidlActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"></action>-->
+            <!--<category android:name="android.intent.category.LAUNCHER"></category>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <service
+            android:name=".service.MessengerService"
+            android:process="com.raymondcqk.service.messenger"
+            ></service>
+        <service
+            android:name=".service.AidlService"
+            android:process="com.raymondcqk.service.aidl">
+        </service>
+
+
+        <service
+            android:name=".service.MusicService"
+            android:process=".musicservice"></service>
+
+        <receiver android:name=".widget.MusicWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="widget.play.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="widget.next.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="widget.preview.action"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/appwiget_provider"></meta-data>
+        </receiver>
+
+    </application>
+
+</manifest>

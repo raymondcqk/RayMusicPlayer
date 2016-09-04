@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_aidl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="a + b = ?"
+        android:textSize="36sp"/>
+
+    <EditText
+        android:hint="number a"
+        android:id="@+id/edt_aidl_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="number b"
+        android:id="@+id/edt_aidl_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_aidl_star_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送消息-开启计时器"/>
+</LinearLayout>

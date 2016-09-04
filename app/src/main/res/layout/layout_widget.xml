@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center">
+
+    <!--<com.raymondqk.raymusicplayer.customview.AvatarCircle-->
+        <!--android:id="@+id/widget_avatar"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:src="@drawable/avatar_joyce"-->
+        <!--app:StrokeWidth="3dp"/>-->
+    <TextView
+        android:id="@+id/widget_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="Ray's MusicPlayer"/>
+
+    <ImageButton
+        android:id="@+id/widget_ib_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/widget_avatar"
+        android:layout_centerHorizontal="true"
+
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/play_selector"/>
+
+    <ImageButton
+        android:id="@+id/widget_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/widget_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/preview_selector"/>
+
+    <ImageButton
+        android:id="@+id/widget_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/widget_avatar"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/next_selector"/>
+</RelativeLayout>
