@@ -1,6 +1,9 @@
 # RayMusicPlayer
+
 音乐数据：ContentProvider读取系统媒体库
+
 多进程：Service单独开一个进程，进程音乐管理
+
 IPC ： Messenger
 
 Bug：
