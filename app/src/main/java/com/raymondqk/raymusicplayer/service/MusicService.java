@@ -375,12 +375,12 @@ public class MusicService extends Service {
 
     }
 
-    private List<MusicMode> scanMusicWithRaw() {
+    /*private List<MusicMode> scanMusicWithRaw() {
         mMusicList = new ArrayList<>();
         //android 获取raw 绝对路径 -- raw资源转uri
         for (int i = 0; i < 10; i++) {     // 通过循环重复加载uri到list里面，模拟有多首歌曲的情况
             //将raw资源转化为uri
-            Uri uri = Uri.parse("android.resource://com.raymondqk.raymusicplayer/" + R.raw.missyou);
+//            Uri uri = Uri.parse("android.resource://com.raymondqk.raymusicplayer/" + R.raw.missyou);
             //加入到musicList
             //把头像资源加入到头像的list里面 与music同步加入，根据index就可以将music和头像对应起来，这是目前的暂缓之策
             // 日后应当根据music的title找到对应的头像图片
@@ -393,7 +393,7 @@ public class MusicService extends Service {
             musicMode.setUri(uri);
             mMusicList.add(musicMode);
             //这是第二首
-            uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.stillalive);
+//            uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.stillalive);
             musicMode = new MusicMode();
             musicMode.setArtist("Big Bang");
             musicMode.setTitle("Still Alive");
@@ -407,6 +407,7 @@ public class MusicService extends Service {
         }
         return mMusicList;
     }
+    */
 
     private List<MusicMode> scanMusicWithContentProvider() {
         Log.i("scanmusic", "正在扫描音乐库");
